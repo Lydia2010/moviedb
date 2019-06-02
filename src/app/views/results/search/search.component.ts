@@ -1,3 +1,5 @@
+// to show up the details for current movie
+
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {MoviedbService} from '../../../models/moviedb.service';
@@ -22,6 +24,7 @@ export class SearchComponent implements OnInit {
     this.showUp();
 
   }
+  // to show uo the details
   showUp(): void {
     this.moviedb.fetchMovieById(this.id).subscribe((results) => {
       this.movie = new Movies (results );

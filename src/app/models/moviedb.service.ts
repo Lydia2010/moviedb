@@ -13,7 +13,7 @@ export class MoviedbService {
 
   constructor(public http: HttpClient) { }
 
-  // Fix this so it uses a custom datatype
+  // to get result by query
   movieSearch(query: string): Observable<any> {
     const url = this.baseUrl + 'search/movie' + this.apikey + '&query=' + query;
     return this.http.get(url).pipe(
@@ -23,7 +23,7 @@ export class MoviedbService {
     );
   }
 
-  // Fix this so it uses a custom datatype
+  // to get result by id
   fetchMovieById(mid: string): Observable<any> {
     const url = this.baseUrl + 'movie/' + mid + this.apikey;
     return this.http.get<Movies>(url);

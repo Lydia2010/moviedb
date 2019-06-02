@@ -11,7 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { SearchComponent } from './views/results/search/search.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonModule
 
   ],
   providers: [],

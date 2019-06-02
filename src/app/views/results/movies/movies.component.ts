@@ -1,3 +1,4 @@
+// to search result for  current request form user
 import { Component, OnInit } from '@angular/core';
 import {MoviedbService} from '../../../models/moviedb.service';
 import {Movies} from '../../../models/Movies';
@@ -22,7 +23,7 @@ export class MoviesComponent implements OnInit {
     //   console.log(results);
     //   this.resultSearch = results;
   }
-
+   // to search by query
   onSearch() {
     this.moviedb.movieSearch(this.query).subscribe(results => {
       console.log(results);
